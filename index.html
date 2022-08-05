@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fizz buzz</title>
+  </head>
+  <body>
+    <script>
+      var guestname = [
+        "guest1",
+        "guest2",
+        "guest3",
+        "guest4",
+        "guest5",
+        "guest6",
+        "guest7",
+        "guest8",
+        "guest9",
+        "guest10",
+        "guest11",
+        "guest12",
+      ];
+      var name = prompt("what is your name?");
+      var checkname = guestname.includes(name);
+      if (checkname == true) {
+        alert("Welcome" + " " + name + " " + "you are invited");
+      } else {
+        alert("please buy a guest ticket. You are not in list");
+      }
+      var FIZZBUZZ = [];
+      var i = 1;
+      function FIZBUZ() {
+        while (i <= 100) {
+          if (i % 3 == 0 && i % 5 == 0) {
+            FIZZBUZZ.push("FIZZBUZZ");
+          } else if (i % 3 == 0) {
+            FIZZBUZZ.push("FIZZ");
+          } else if (i % 5 == 0) {
+            FIZZBUZZ.push("BUZZ");
+          } else {
+            FIZZBUZZ.push("ANIrBAN");
+          }
+          i++;
+        }
+        console.log(FIZZBUZZ);
+      }
+      FIZBUZ();
+    </script>
+  </body>
+  <!-- <script>
+    var i = 1;
+    while (i <= 100) {
+      if (i % 3 == 0) {
+        console.log("FIZZ");
+      } else {
+        console.log(i);
+        i++;
+      }
+    }
+  </script> -->
+</html>
